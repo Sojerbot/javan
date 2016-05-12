@@ -4,7 +4,7 @@ package.cpath = package.cpath .. ';.luarocks/lib/lua/5.2/?.so'
 
 require("./bot/utils")
 
-VERSION = '3'
+VERSION = '1'
 
 -- This function is called when tg receive a msg
 function on_msg_receive (msg)
@@ -255,7 +255,9 @@ function create_config( )
     "webshot",
     "welcome",
     "ziba",
-    "ziba2"
+    "ziba2",
+    "music",
+    "auto"
     },
     sudo_users = {116251654},--Sudo users
     disabled_channels = {},
