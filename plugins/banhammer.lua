@@ -116,7 +116,7 @@ end
 local function run(msg, matches)
  if matches[1]:lower() == 'ایدی' or matches[1]:lower() == 'آیدی' or matches[1]:lower() == 'id' then
     if msg.to.type == "user" then
-      return "Bot ID: "..msg.to.id.. "\n\nYour ID: "..msg.from.id
+      return "ایدیه بوت🆔 "..msg.to.id.. "\n\nایدیه شما🆔 "..msg.from.id
     end
     if type(msg.reply_id) ~= "nil" then
       local name = user_print_name(msg.from)
