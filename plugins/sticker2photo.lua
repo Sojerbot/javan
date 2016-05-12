@@ -29,7 +29,7 @@ local function run(msg,matches)
 end
 return {
   patterns = {
- "^[!/](tophoto)$",
+ "^عکس کن$",
  "%[(document)%]",
   },
   run = run,
