@@ -1434,7 +1434,7 @@ local function run(msg, matches)
         return "اول با لینک جدید یک  لینک جدید بسازید"
       end
        savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested group link ["..group_link.."]")
-      return "لینک گروه:\n🤖🇮🇷🤖🇮🇷🤖🇮🇷🤖🇮🇷🤖🇮🇷🤖🇮🇷🤖🇮🇷🤖🇮🇷🤖🇮🇷🤖🇮🇷\n"..group_link
+      return "لینک گروه:\n🍁🍂🍁🍂🍁🍂🍁🍂🍁🍂🍁🍂🍁🍂🍁🍂🍁🍂\n_______________________________________________________\n"..group_link
     end
       if matches[1] == 'لینک خصوصی' or matches[1] == 'linkpv' then
       if not is_momod(msg) then
@@ -1445,9 +1445,9 @@ local function run(msg, matches)
         return "اول با لینک جدید یک لینک جدید بسازید"
       end
        savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested group link ["..group_link.."]")
-     send_large_msg('user#id'..msg.from.id, "لینک گروه:\n🤖🇮🇷🤖🇮🇷🤖🇮🇷🤖🇮🇷🤖🇮🇷🤖🇮🇷🤖🇮🇷🤖🇮🇷🤖🇮🇷🤖🇮🇷\n"..group_link)
+     send_large_msg('user#id'..msg.from.id, "لینک گروه:\n🍁🍂🍁🍂🍁🍂🍁🍂🍁🍂🍁🍂🍁🍂🍁🍂🍁🍂\n_______________________________________________________\n"..group_link
     end
-    if matches[1] == 'دارنده' or matches[1] == 'setleader' and matches[2] then
+    if matches[1] == 'تنظیم صاحب' or matches[1] == 'setleader' and matches[2] then
       if not is_owner(msg) then
         return "شما مجاز نیستید"
       end
@@ -1457,7 +1457,7 @@ local function run(msg, matches)
       local text = matches[2].." added as leader"
       return text
     end
-    if matches[1] == 'دارنده' or matches[1] == 'setleader' and not matches[2] then
+    if matches[1] == 'تنظیم صاحب' or matches[1] == 'setleader' and not matches[2] then
       if not is_owner(msg) then
         return "شما مجاز نیستید"
       end
@@ -1609,8 +1609,8 @@ return {
   "^(تنزل)",
   "^(تنظیم) ([^%s]+) (.*)$",
   "^(قفل) (.*)$",
-  "^(دارنده) (%d+)$",
-  "^(دارنده)",
+  "^(تنظیم صاحب) (%d+)$",
+  "^(تنظیم صاحب)",
   "^(صاحب گروه)$",
   "^(کد) (.*)$",
   "^(صاحب) (%d+) (%d+)$",-- (group id) (leader id)
