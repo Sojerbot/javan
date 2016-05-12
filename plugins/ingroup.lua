@@ -292,7 +292,7 @@ local function show_group_settingsmod(msg, data, target)
     	welcome = data[tostring(msg.to.id)]['settings']['welcome']
    	end
   local settings = data[tostring(target)]['settings']
-  local text = "تنظیمات گروه:\n⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙\n>قفل نام گروه : "..settings.lock_name.."\n>قفل عکس گروه : "..settings.lock_photo.."\n>قفل اعضا : "..settings.lock_member.."\n>ممنوعیت ارسال لینک : "..lock_link.."\n>قفل ورود : "..lock_join.."\n>قفل رسانه : "..lock_media.."\n>قفل اشتراک گذاری : "..lock_share.."\n>حساسیت اسپم : "..NUM_MSG_MAX.."\n>قفل ربات ها : "..bots_protection.."\n>خوشامد : "..welcome.."\n>قفل تگ : "..tag.."\n>قفل اینگلیسی :"..lock_english.."\n>قفل فحش : "..lock_badw.."\n>مدل گروه : "..groupmodel.."\n>ورژن : "..version
+  local text = "تنظیمات گروه:\n🔧🔧🔧🔧🔧🔧🔧🔧🔧🔧🔧 نام گروه : "..settings.lock_name.."\n>قفل عکس گروه : "..settings.lock_photo.."\n>قفل اعضا : "..settings.lock_member.."\n>ممنوعیت ارسال لینک : "..lock_link.."\n>قفل ورود : "..lock_join.."\n>قفل رسانه : "..lock_media.."\n>قفل اشتراک گذاری : "..lock_share.."\n>حساسیت اسپم : "..NUM_MSG_MAX.."\n>قفل ربات ها : "..bots_protection.."\n>خوشامد : "..welcome.."\n>قفل تگ : "..tag.."\n>قفل اینگلیسی :"..lock_english.."\n>قفل فحش : "..lock_badw.."\n>مدل گروه : "..groupmodel.."\n>ورژن : "..version
   return text
 end
 
