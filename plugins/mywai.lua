@@ -1,30 +1,30 @@
 do
 
 local function run(msg, matches)
-  if matches[1] == 'me' then
+  if matches[1] == 'من کیم؟' then
     if is_sudo(msg) then
-    send_document(get_receiver(msg), "/root/robot/sudo.webp", ok_cb, false)
-      return "You are My SUDO"
+    send_document(get_receiver(msg), './plugins/sticker/sudo.webp', ok_cb, false)
+      return "تو پدر و سازنده خودمی 🔲"
     elseif is_admin(msg) then
-    send_document(get_receiver(msg), "/root/robot/admin.webp", ok_cb, false)
-      return "You are My ADMIN"
+    send_document(get_receiver(msg), "./plugins/sticker/admin.webp", ok_cb, false)
+      return "توهم ادمین خودمی🐶"
     elseif is_owner(msg) then
-    send_document(get_receiver(msg), "/root/robot/owner.webp", ok_cb, false)
-      return "You are Group Owner"
+    send_document(get_receiver(msg), "./plugins/sticker/owner.webp", ok_cb, false)
+      return "تو صاحب گروهی👑"
     elseif is_momod(msg) then
-    send_document(get_receiver(msg), "/root/robot/mod.webp", ok_cb, false)
-      return "You are Group Mod"
+    send_document(get_receiver(msg), "./plugins/sticker/moderator.webp", ok_cb, false)
+      return "تو مدیر گروهی👒"
     else
-    send_document(get_receiver(msg), "/root/robot/mmbr.webp", ok_cb, false)
-      return "You are Group Member"
+    send_document(get_receiver(msg), "./plugins/sticker/member.webp", ok_cb, false)
+      return "تو عضو عادیه گروهی 🎩"
     end
   end
 end
 
 return {
   patterns = {
-    "^[!/]([Mm]e)$",
-    "^([Mm]e)$"
+    "^من کیم؟$",
+    "^من کیم؟$"
     },
   run = run
 }
