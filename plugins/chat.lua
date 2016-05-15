@@ -1,6 +1,6 @@
 local function run(msg)
 if msg.text == "hi" then
-  return "Hello bb"
+  return "hello bayby"
 end
 if msg.text == "لیست حرفها" then
   return "با نوشتن این حرفها ربات به شما پاسخ میده\n----------------------------------\nhi\nhello\nzac\nsalam\n!sbss\nwindow\n!window\nمحمد\nسازندت کیه؟\nشماره سازندت\nخدافظ\nسلام\nکس نگو\nتورباتی؟\nعجب\nگوه نخور\nبه کیرم\nچطوری؟\nکانالت"
@@ -92,7 +92,9 @@ return {
     "^چطوری؟$",
     "^کس نگو$",
     "^گوه نخور$",
-    "^عجب$"
+    "^عجب$",
+    "^لیست حرفها$",
+    "^کانالت"
     }, 
   run = run,
   pre_process = pre_process
