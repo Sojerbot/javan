@@ -1445,7 +1445,7 @@ local function run(msg, matches)
         return "اول با لینک جدید یک لینک جدید بسازید"
       end
        savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested group link ["..group_link.."]")
-     send_large_msg('user#id'..msg.from.id, "لینک گروه:\n🍁🍂🍁🍂🍁🍂🍁🍂🍁🍂🍁🍂🍁🍂🍁🍂🍁🍂\n_______________________________________________________\n"..group_link
+     send_large_msg('user#id'..msg.from.id, "لینک گروه:\n🍁🍂🍁🍂🍁🍂🍁🍂🍁🍂🍁🍂🍁🍂🍁🍂🍁🍂\n_______________________________________________________\n"..group_link)
     end
     if matches[1] == 'تنظیم صاحب' or matches[1] == 'setleader' and matches[2] then
       if not is_owner(msg) then
